@@ -15,6 +15,9 @@ module.exports = {
     password: '#pass',
     submitButton: '[name="send"] > span > span',
 
+    clickLogout: '.dropit-trigger',
+
+
   // introducing methods
 
   urlTest(){
@@ -26,6 +29,11 @@ module.exports = {
     I.fillField(this.email, email);
     I.fillField(this.password, password);
     I.click(this.submitButton);
+  },
+
+  logout(){
+
+    I.click(this.clickLogout);
   }
 
   // insert your locators and methods here

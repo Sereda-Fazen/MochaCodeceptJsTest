@@ -6,12 +6,14 @@
     "WebDriverIO": {
       "url": "https://denimio.com",
       "browser": "chrome",
-      "windowSize": "1980x1780"
+      "windowSize": "1980x1780",
+      "restart": "false"
     }
   },
   "include": {
     "I": "./steps_file.js",
-    "loginPage": "./pages/Page.js"
+    "loginPage": "./pages/Page.js",
+    "searchPage": "./pages/Search.js"
   },
   "bootstrap": false,
   "mocha": {
